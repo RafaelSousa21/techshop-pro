@@ -27,3 +27,6 @@ A aplicação está organizada em 7 páginas distintas para garantir uma navega�
 5. **Carrinho**: Gestão de compras e finalização de pedido.
 6. **Registo**: Formulário de criação de conta.
 7. **Contacte-nos**: Canal de suporte e contacto.
+
+
+[Clica aqui para ler o Relatório Técnico do Projeto](./RelatórioUC00604%20FINAL.pdf)
