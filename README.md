@@ -1,4 +1,4 @@
-# techshop-pro
+# TechShop Pro
 Este projeto é uma aplicação web completa de frontend que simula uma loja online de produtos tecnológicos. O objetivo principal foi demonstrar o domínio das tecnologias core do desenvolvimento web: HTML5, CSS3 e JavaScript.
 
 Funcionalidades Principais
