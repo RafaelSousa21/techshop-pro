@@ -1,6 +1,7 @@
 # TechShop Pro
 Este projeto é uma aplicação web completa de frontend que simula uma loja online de produtos tecnológicos. O objetivo principal foi demonstrar o domínio das tecnologias core do desenvolvimento web: HTML5, CSS3 e JavaScript.
 
+
 Funcionalidades Principais
 
 Catálogo Dinâmico: Visualização de produtos tecnológicos com sistema de filtragem.
@@ -22,6 +23,7 @@ HTML5: Estrutura semântica utilizando etiquetas como (header), (nav), (main), (
 CSS3: Estilização moderna com efeitos de hover, transições e sombras.
 
 JavaScript: Lógica de negócio, manipulação do DOM e gestão do estado da aplicação via localStorage.
+
 
 Estrutura do Projeto
 A aplicação está organizada em 7 páginas distintas para garantir uma navegação fluida:
