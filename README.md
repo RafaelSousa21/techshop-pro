@@ -17,12 +17,16 @@ Design Responsivo: Layout adaptável para Desktop, Tablet e Mobile através de C
 Validação de Formulários: Verificação de campos obrigatórios e tipos de dados na página de registo.
 
 
+
+
 Tecnologias Utilizadas
 HTML5: Estrutura semântica utilizando etiquetas como (header), (nav), (main), (section) e (footer).
 
 CSS3: Estilização moderna com efeitos de hover, transições e sombras.
 
 JavaScript: Lógica de negócio, manipulação do DOM e gestão do estado da aplicação via localStorage.
+
+
 
 
 Estrutura do Projeto
