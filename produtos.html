@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop Pro | Contacte-nos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <h1 class="logo">TechShop <span class="pro">Pro</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="promocoes.html"><i class="fas fa-percent"></i> Promoções</a></li>
+                    <li><a href="favoritos.html" class="nav-icon-link"><i class="fas fa-heart"></i> Favoritos 
+                            <span id="contador-favoritos" class="badge">0</span>
+            
+                    <li><a href="carrinho.html" class="nav-icon-link"><i class="fas fa-shopping-cart"></i> Carrinho
+                    <li><a href="registo.html" class="nav-icon-link"><i class="fas fa-user"></i> Registo</a></li>
+                    <li><a href="contacto.html" class="active nav-icon-link"><i class="fas fa-phone-alt"></i> Contacte-nos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main class="container-contacto">
+    <div class="contacto-wrapper">
+        
+        <div class="contacto-info">
+            <h2>Contacte-nos</h2>
+            <p class="subtexto">Escolha a forma mais conveniente<br>para si:</p>
+
+            <div class="info-item">
+                <i class="fas fa-phone-alt icone-azul"></i>
+                <div class="info-text">
+                    <h3>Telemóvel</h3>
+                    <p>+351 912 345 678</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-envelope icone-azul"></i>
+                <div class="info-text">
+                    <h3>Email</h3>
+                    <p>suporte@techshoppro.pt</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt icone-azul"></i>
+                <div class="info-text">
+                    <h3>Loja Física</h3>
+                    <p>Rua da Tecnologia, nº 123,<br>Lisboa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacto-form">
+            <h2>Envie-nos uma Mensagem</h2>
+            
+            <form id="form-contacto" onsubmit="enviarMensagem(event)">
+                
+                <div class="input-group">
+                    <label for="nome-cont">Nome:</label>
+                    <input type="text" id="nome-cont" placeholder="O seu nome completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email-cont">Email:</label>
+                    <input type="email" id="email-cont" placeholder="o-seu@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="assunto-cont">Assunto:</label>
+                    <select id="assunto-cont" required>
+                        <option value="duvida">Dúvida sobre Produto</option>
+                        <option value="encomenda">Estado da Encomenda</option>
+                        <option value="devolucao">Devoluções</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="mensagem-cont">Mensagem:</label>
+                    <textarea id="mensagem-cont" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+            </form>
+        </div>
+
+    </div>
+</main>

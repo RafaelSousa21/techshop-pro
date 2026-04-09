@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop Pro | Nome da Página</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <h1 class="logo">TechShop <span class="pro">Pro</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="promocoes.html"><i class="fas fa-percent"></i> Promoções</a></li>
+                    <li><a href="favoritos.html" class="nav-icon-link"><i class="fas fa-heart"></i> Favoritos 
+                            <span id="contador-favoritos" class="badge">0</span>
+                    <li><a href="carrinho.html" class="nav-icon-link"><i class="fas fa-shopping-cart"></i> Carrinho
+                    <li><a href="registo.html" class="nav-icon-link"><i class="fas fa-user"></i> Registo</a></li>
+                    <li><a href="contacto.html" class="nav-icon-link"><i class="fas fa-phone-alt"></i> Contacte-nos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main class="container-carrinho">
+    <div class="carrinho-box">
+        <h2><i class="fas fa-shopping-cart"></i> O seu Carrinho</h2>
+        
+        <div class="tabela-responsiva">
+            <table id="tabela-carrinho">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Subtotal</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-carrinho">
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="carrinho-footer">
+            <div class="total-compra">
+                Total: <span id="valor-total">0.00€</span>
+            </div>
+            <button type="button" onclick="finalizarCompra()" style="background-color: #28a745; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap: 8px; font-size: 16px;">
+                <i class="fa fa-check-circle"></i> Finalizar Compra
+            </button>
+        </div>
+    </div>
+</main>
+
+
+<script>
+function finalizarCompra() {
+    // 1. Mostra o alerta de sucesso
+    alert("Compra finalizada com sucesso! O seu carrinho será esvaziado.");
+
+    // 2. LIMPA O CARRINHO
+    localStorage.removeItem('carrinho'); 
+
+    // 3. REDIRECIONA para a página principal
+    window.location.href = "index.html";
+}
+</script>
+
+<footer>
+        <p>&copy; 2026 TechShop - Trabalho Final UC 00604</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

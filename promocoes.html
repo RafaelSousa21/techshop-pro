@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop Pro | Os Meus Favoritos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <h1 class="logo">TechShop <span class="pro">Pro</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="promocoes.html"><i class="fas fa-percent"></i> Promoções</a></li>
+                    <li><a href="favoritos.html" class="active nav-icon-link">
+                        <i class="fas fa-heart"></i> Favoritos <span id="contador-favoritos" class="badge">0</span>
+                    </a></li>
+                    <li><a href="carrinho.html" class="nav-icon-link"><i class="fas fa-shopping-cart"></i> Carrinho</a></li>
+                    <li><a href="registo.html"><i class="fas fa-user"></i> Registo</a></li>
+                    <li><a href="contacto.html"><i class="fas fa-phone-alt"></i> Contacte-nos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pagina-favoritos">
+        
+        <div class="cabecalho-favoritos">
+            <h2><i class="fas fa-heart" style="color: #ff4757;"></i> Os Meus Favoritos</h2>
+        </div>
+
+        <div class="produtos-grid grelha-centrada" id="grelha-favoritos">
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechShop - Trabalho Final UC 00604</p>
+    </footer>
+
+    <script>
+    if (typeof adicionarAoCarrinho !== 'function') {
+        function adicionarAoCarrinho(nome, preco) {
+            console.log("Adicionado: " + nome + " - " + preco + "€");
+        }
+    }
+    </script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
